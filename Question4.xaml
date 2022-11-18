@@ -1,0 +1,24 @@
+﻿<Page x:Class="WPF_Shovkun_PR7_UP.Question4"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:WPF_Shovkun_PR7_UP"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Question4">
+
+    <Grid>
+        <Label Content="Кто такой Тихонов Егор Олегович?" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <StackPanel Orientation="Vertical" Width="170" Height="100" Margin="0,150,0,0">
+            <RadioButton x:Name="A1" Content="Хозяин"/>
+            <RadioButton x:Name="A2" Content="Препод"/>
+            <RadioButton x:Name="A3" Content="ГДЗ по спец. предметам"/>
+            <RadioButton x:Name="A4" Content="Просто чел"/>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,250,0,0">
+            <Button x:Name="NQ" Content="Следующий вопрос" FontSize="20" Width="190" Height="40" Click="NQ_Click"/>
+            <Button x:Name="GB" Content="Назад" FontSize="20" Width="190" Height="40" Click="GB_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>

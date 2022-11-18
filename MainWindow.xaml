@@ -1,0 +1,22 @@
+﻿<Window x:Class="WPF_Shovkun_PR7_UP.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Shovkun_PR7_UP"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Label Content="Тестирование для группы №402 ИСИП" HorizontalAlignment="Center" FontSize="25"/>
+
+        <Frame x:Name="FrmMain" NavigationUIVisibility="Hidden" Grid.Row="1">
+
+        </Frame>
+        <Button x:Name="ST" Content="Начать тест" FontSize="25" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="1" Click="ST_Click"/>
+        <Button x:Name="ET" Content="Выйти" FontSize="25" Width="120" Height="40" VerticalAlignment="Top" Grid.Row="1" Click="ET_Click"/>
+    </Grid>
+</Window>
